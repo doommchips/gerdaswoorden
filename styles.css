@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Director";
+    src: local("Director"),
+      url("Director") format("woff");
+  }
+  
+body {
+    font-family: "Director", monospace;
+    /* overflow: hidden; */
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 24px 0;
+    min-height: calc(100vh - 48px);
+    width: 80vw;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+    padding: 4px 0;
+}
+
+p > span {
+    flex-grow: 1;
+}
+
+p > grow2 {
+    flex-grow: 2;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.spread.narrow {
+    width: 60%;
+}
+
+.fade {
+    opacity: 0;
+    filter: blur(2px);
+    transition: 1s;
+}
+
+.fade.complete {
+    opacity: 1;
+    filter: blur(0);
+}
