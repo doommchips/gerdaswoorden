@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     padding: 24px 0;
     min-height: calc(100vh - 48px);
-    width: 80vw;
+    width: 90vw;
     max-width: 1000px;
 
     display: flex;
@@ -52,7 +52,7 @@ p > grow2 {
 
 .fade {
     opacity: 0;
-    filter: blur(2px);
+    filter: blur(1px);
     transition: 1s;
 }
 
