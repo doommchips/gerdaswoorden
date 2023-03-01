@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", ready());
 
 function ready() {
     // console.log("ready");
-    window.scrollTo(0, document.body.scrollHeight);
+    // window.scrollTo(0, document.body.scrollHeight);
+    window.scroll(0, document.body.scrollHeight);
+    console.log(document.body.scrollHeight);
     do {
         eCount++;
     } while (document.getElementById("e" + eCount));
